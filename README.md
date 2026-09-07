@@ -1,6 +1,6 @@
-# Panadería y Pastelería Mi Pan - Sitio Web Oficial
+# MI PAN 2025, C.A. - Sitio Web Oficial
 
-Sitio web informativo de alto impacto diseñado para **Panadería y Pastelería Mi Pan**, enfocado en destacar los panes tradicionales venezolanos y postres exquisitos.
+Sitio web informativo de alto impacto diseñado para **Panadería y Pastelería MI PAN 2025, C.A.**, enfocado en destacar los panes tradicionales venezolanos y postres exquisitos.
 
 ## 📧 Información de Contacto
 * **Correo Electrónico:** `panaderiaypasteleriamipanmipan@gmail.com`
