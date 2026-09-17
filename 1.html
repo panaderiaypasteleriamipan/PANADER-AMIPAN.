@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería MiPan 2025 C.A. | Los Teques - Panadería Artesanal & Repostería</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Panadería MiPan 2025 C.A. en Los Teques, Estado Miranda. Pan artesanal, pan de jamón, dulces, tortas y repostería de primera calidad. Pedidos directos por WhatsApp y delivery.">
+    <meta name="keywords" content="Panaderia Los Teques, MiPan 2025, Pan de Jamon Los Teques, Reposteria San Antonio Carrizal, Pan Artesanal Miranda">
+    <meta name="author" content="Panadería MiPan 2025 C.A.">
+    <meta name="theme-color" content="#8B5A2B">
+
+    <!-- Web App Manifest via Data URI for Instant PWA Support -->
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICJuYW1lIjogIlBhbmFkZXLDrWEgTWlQYW4gMjAyNSBDLkEuIiwKICAic2hvcnRfbmFtZSI6ICJNaVBhbiAyMDI1IiwKICAic3RhcnRfdXJsIjogIi4vIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjRkZGOEYwIiwKICAidGhlbWVfY29sb3IiIjogIjhCNUEyQiIsCiAgImljb25zIjogW3sKICAgICJzcmMiOiAiMTQzNjQuanBnIiwKICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICJ0eXBlIjogImltYWdlL2pwZyIKICB9XQp9">
+
+    <!-- Schema.org JSON-LD for Local Business / Bakery -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Panadería MiPan 2025 C.A.",
+      "image": "14364.jpg",
+      "@id": "https://mipan2025.com.ve",
+      "url": "https://mipan2025.com.ve",
+      "telephone": "+584162214657",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Pedro Russo Ferrer, C.C. Los Teques",
+        "addressLocality": "Los Teques",
+        "addressRegion": "Estado Miranda",
+        "postalCode": "1201",
+        "addressCountry": "VE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 10.3444,
+        "longitude": -67.0428
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "06:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://instagram.com/MIPAN2025.CA",
+        "https://tiktok.com/@MIPAN2025.CA"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts: Fraunces & Public Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Public+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        classic: {
+                            50: '#fffaf3',
+                            100: '#fdf3e3',
+                            200: '#fbe4c4',
+                            500: '#8b5a2b',
+                            600: '#734821',
+                            700: '#5c3819',
+                            gold: '#d4af37',
+                            cream: '#fff8f0'
+                        },
+                        navidad: {
+                            red: '#b91c1c',
+                            darkred: '#881337',
+                            green: '#047857',
+                            darkgreen: '#064e3b',
+                            gold: '#f59e0b',
+                            cream: '#fef2f2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Fraunces', 'serif'],
+                        sans: ['Public Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Theme & Snow Styles -->
+    <style>
+        :root {
+            --brand-primary: #8b5a2b;
+            --brand-secondary: #d4af37;
+            --brand-bg: #fff8f0;
+            --brand-text: #2d1e18;
+        }
+
+        body.theme-navidad {
+            --brand-primary: #b91c1c;
+            --brand-secondary: #047857;
+            --brand-bg: #fef2f2;
+            --brand-text: #1a0505;
+        }
+
+        /* Snowfall Canvas Overlay */
+        #snowCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 40;
+            display: none;
+        }
+
+        body.theme-navidad #snowCanvas {
+            display: block;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #8b5a2b;
+            border-radius: 4px;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #1f2937;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #4b5563;
+        }
+
+        .glass-card {
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.85);
+        }
+        .dark .glass-card {
+            background: rgba(31, 41, 55, 0.85);
+        }
+
+        /* Print styles for Receipt */
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #printableInvoiceModal, #printableInvoiceModal * {
+                visibility: visible;
+            }
+            #printableInvoiceModal {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-classic-cream dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans transition-colors duration-300 min-h-screen flex flex-col">
+
+    <!-- Canvas for Snowflakes on Christmas Theme -->
+    <canvas id="snowCanvas"></canvas>
+
+    <!-- Offline & Network Status Banner -->
+    <div id="networkStatus" class="hidden bg-amber-500 text-white text-xs text-center py-1 px-4 font-bold sticky top-0 z-50 transition-all">
+        <i class="fa-solid fa-wifi-slash mr-1"></i> Modo fuera de línea (Offline). El carrito y los datos locales siguen funcionando.
+    </div>
+
+    <!-- Announcement & BCV Exchange Rate Bar -->
+    <div class="bg-gradient-to-r from-classic-500 to-amber-700 dark:from-gray-800 dark:to-gray-900 text-white text-xs sm:text-sm py-2 px-4 shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="bg-amber-400 text-gray-900 font-bold px-2 py-0.5 rounded text-xs animate-pulse">BCV OFICIAL</span>
+                <span>Tasa de cambio: <strong id="bcvRateDisplay">68.50</strong> Bs/$</span>
+                <button onclick="openRateModal()" class="text-xs underline text-amber-200 hover:text-white ml-2">
+                    <i class="fa-solid fa-pen-to-square"></i> Actualizar
+                </button>
+            </div>
+            <div class="flex items-center gap-4 text-xs sm:text-sm">
+                <span><i class="fa-solid fa-clock text-amber-300 mr-1"></i> Horario: 6:00 AM - 8:00 PM (Todos los días)</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-location-dot text-amber-300 mr-1"></i> Los Teques, Av. Pedro Russo Ferrer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-amber-100 dark:border-gray-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+            
+            <!-- Brand Logo & Name -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="14364.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=150&q=80'" alt="Logo Panadería MiPan 2025" class="w-12 h-12 rounded-full object-cover border-2 border-classic-gold group-hover:scale-105 transition-transform shadow-md">
+                <div>
+                    <h1 class="font-serif text-lg sm:text-2xl font-bold tracking-tight text-classic-500 dark:text-amber-400 leading-tight">
+                        MiPan 2025 <span class="text-xs sm:text-sm font-sans font-normal text-gray-500 dark:text-gray-400">C.A.</span>
+                    </h1>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-1">
+                        <i class="fa-solid fa-wheat-awn text-amber-600"></i> Los Teques • Tradición Artesanal
+                    </p>
+                </div>
+            </a>
+
+            <!-- Search Input (Desktop) -->
+            <div class="hidden md:flex flex-1 max-w-md mx-4">
+                <div class="relative w-full">
+                    <input type="text" id="searchInputDesktop" oninput="handleSearch(this.value)" placeholder="Buscar pan de jamón, muffins, brazo gitano..." class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 dark:border-gray-700 dark:bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-classic-500">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-2.5 text-gray-400"></i>
+                </div>
+            </div>
+
+            <!-- Actions & Toolbar Controls -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                
+                <!-- Season Theme Switcher Selector -->
+                <div class="relative">
+                    <select id="seasonSelector" onchange="changeSeasonTheme(this.value)" class="text-xs sm:text-sm bg-amber-50 dark:bg-gray-800 border border-amber-200 dark:border-gray-700 rounded-lg px-2 py-1.5 font-medium text-classic-500 dark:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500 cursor-pointer">
+                        <option value="classic">🥖 Clásico Artesanal</option>
+                        <option value="navidad">🎄 Mágica Navidad</option>
+                    </select>
+                </div>
+
+                <!-- Dark / Light Mode Toggle -->
+                <button onclick="toggleDarkMode()" title="Cambiar Modo Oscuro/Claro" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-amber-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                    <i id="darkModeIcon" class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- PWA Install Button (Dynamic) -->
+                <button id="pwaInstallBtn" onclick="installPWA()" class="hidden sm:flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-3 py-2 rounded-lg shadow transition transform hover:scale-105">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Instalar App</span>
+                </button>
+
+                <!-- Cart Button -->
+                <button onclick="toggleCartDrawer()" class="relative p-2 sm:px-3 sm:py-2 bg-classic-500 hover:bg-classic-600 text-white rounded-lg shadow-md flex items-center gap-2 transition">
+                    <i class="fa-solid fa-cart-shopping text-lg"></i>
+                    <span class="hidden sm:inline font-semibold text-sm">Carrito</span>
+                    <span id="cartBadge" class="bg-amber-400 text-gray-900 text-xs font-bold px-2 py-0.5 rounded-full border border-white">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Search Input Bar -->
+        <div class="md:hidden px-4 pb-3">
+            <div class="relative w-full">
+                <input type="text" id="searchInputMobile" oninput="handleSearch(this.value)" placeholder="Buscar productos..." class="w-full pl-10 pr-4 py-1.5 rounded-full border border-gray-300 dark:border-gray-700 dark:bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-classic-500">
+                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-2 text-gray-400"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Banner Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-amber-100 via-amber-50 to-orange-100 dark:from-gray-900 dark:via-gray-800 dark:to-amber-950/40 border-b border-amber-200 dark:border-gray-800 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            
+            <div class="space-y-4 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-200/80 dark:bg-amber-900/50 text-amber-900 dark:text-amber-200 text-xs font-bold tracking-wide">
+                    <i class="fa-solid fa-award"></i> La Panadería Favorita de Los Teques
+                </div>
+                <h2 id="heroTitle" class="font-serif text-3xl sm:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
+                    Sabor Artesanal Recién Horneado Cada Mañana
+                </h2>
+                <p id="heroSubtitle" class="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
+                    Disfruta de nuestros selectos panes artesanales, rollos de canela, brazo gitano, muffins de chocolate y el inigualable Pan de Jamón Navideño con entrega directa a tu hogar.
+                </p>
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
+                    <a href="#catalogo" class="bg-classic-500 hover:bg-classic-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                        <i class="fa-solid fa-store"></i> Ver Catálogo de Productos
+                    </a>
+                    <a href="https://wa.me/584162214657?text=Hola%20Panader%C3%ADa%20MiPan%202025,%20quisiera%20consultar%20disponibilidad" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image Showcase Carousel / Grid Preview -->
+            <div class="relative flex justify-center">
+                <div class="relative w-full max-w-md aspect-4/3 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800">
+                    <img id="heroImage" src="11996.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80'" alt="Pan de Jamón Artesanal MiPan" class="w-full h-full object-cover transition-opacity duration-700">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-white">
+                        <p class="font-bold font-serif text-lg" id="heroImageTitle">Pan de Jamón & Pan Artesanal</p>
+                        <p class="text-xs text-amber-200">Elaborado con ingredientes premium y receta tradicional</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Store & Catalog Section -->
+    <main id="catalogo" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1 w-full">
+        
+        <!-- Section Title & Filters Bar -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+            <div>
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+                    Nuestros Productos
+                </h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Precios actualizados automáticamente con Tasa BCV. Selecciónalos para armar tu pedido.
+                </p>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex flex-wrap items-center gap-2">
+                <button onclick="filterCategory('todos')" class="cat-btn active px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border border-classic-500 bg-classic-500 text-white transition">Todos</button>
+                <button onclick="filterCategory('panes')" class="cat-btn px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:border-classic-500 transition">🥖 Panes</button>
+                <button onclick="filterCategory('dulces')" class="cat-btn px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:border-classic-500 transition">🍰 Dulces & Tortas</button>
+                <button onclick="filterCategory('navidad')" class="cat-btn px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:border-classic-500 transition">🎄 Navideño</button>
+            </div>
+        </div>
+
+        <!-- Dynamic Product Catalog Grid -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamic JavaScript Render of Products -->
+        </div>
+
+    </main>
+
+    <!-- Shopping Cart Drawer (Off-Canvas Right) -->
+    <div id="cartDrawerBackdrop" onclick="toggleCartDrawer()" class="fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <aside id="cartDrawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white dark:bg-gray-900 z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+        
+        <!-- Cart Drawer Header -->
+        <div class="p-4 border-b border-gray-200 dark:border-gray-800 flex items-center justify-between bg-amber-50 dark:bg-gray-800">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-basket-shopping text-classic-500 dark:text-amber-400 text-xl"></i>
+                <h3 class="font-serif font-bold text-lg text-gray-900 dark:text-white">Tu Pedido</h3>
+            </div>
+            <button onclick="toggleCartDrawer()" class="p-1 rounded-lg text-gray-500 hover:bg-gray-200 dark:hover:bg-gray-700">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Cart Items List Container -->
+        <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-4 space-y-3">
+            <!-- Dynamic Cart Items Rendered Here -->
+        </div>
+
+        <!-- Cart Checkout Options & Form -->
+        <div class="p-4 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/60 space-y-3">
+            
+            <!-- Delivery Options Selector -->
+            <div>
+                <label class="block text-xs font-bold uppercase text-gray-600 dark:text-gray-400 mb-1">
+                    <i class="fa-solid fa-truck-fast mr-1"></i> Opción de Entrega
+                </label>
+                <select id="deliverySelect" onchange="updateCartTotals()" class="w-full text-xs p-2 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800 text-gray-800 dark:text-gray-200">
+                    <option value="pickup">Retiro en Tienda (Av. Pedro Russo Ferrer) - Gratis</option>
+                    <option value="delivery_teques">Delivery Los Teques (+ $2.00 USD)</option>
+                    <option value="delivery_altos">Delivery San Antonio / Carrizal (+ $4.00 USD)</option>
+                </select>
+            </div>
+
+            <!-- Customer Details Form -->
+            <div class="space-y-2 pt-1">
+                <input type="text" id="customerName" placeholder="Nombre completo *" class="w-full text-xs p-2 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800">
+                <input type="tel" id="customerPhone" placeholder="Teléfono de contacto *" class="w-full text-xs p-2 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800">
+                <textarea id="customerAddress" rows="2" placeholder="Dirección de entrega o referencia *" class="w-full text-xs p-2 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800 resize-none"></textarea>
+            </div>
+
+            <!-- Totals Summary Breakdown -->
+            <div class="bg-white dark:bg-gray-900 p-3 rounded-lg border border-gray-200 dark:border-gray-700 space-y-1 text-xs">
+                <div class="flex justify-between text-gray-600 dark:text-gray-400">
+                    <span>Subtotal ($ USD):</span>
+                    <span id="cartSubtotalUsd">$0.00</span>
+                </div>
+                <div class="flex justify-between text-gray-600 dark:text-gray-400">
+                    <span>Delivery ($ USD):</span>
+                    <span id="cartDeliveryUsd">$0.00</span>
+                </div>
+                <div class="flex justify-between font-bold text-sm text-gray-900 dark:text-white pt-1 border-t border-gray-100 dark:border-gray-800">
+                    <span>Total ($ USD Ref.):</span>
+                    <span id="cartTotalUsd" class="text-emerald-600 dark:text-emerald-400">$0.00</span>
+                </div>
+                <div class="flex justify-between font-bold text-xs text-classic-500 dark:text-amber-400">
+                    <span>Total (Bolívares BCV):</span>
+                    <span id="cartTotalBcv">Bs. 0.00</span>
+                </div>
+            </div>
+
+            <!-- Checkout Action Buttons -->
+            <div class="grid grid-cols-2 gap-2 pt-1">
+                <button onclick="sendOrderWhatsApp()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-2 rounded-xl text-xs flex items-center justify-center gap-1 shadow">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> Pedir por WhatsApp
+                </button>
+                <button onclick="generateDigitalInvoice()" class="bg-classic-500 hover:bg-classic-600 text-white font-bold py-2.5 px-2 rounded-xl text-xs flex items-center justify-center gap-1 shadow">
+                    <i class="fa-solid fa-file-invoice text-sm"></i> Factura Digital
+                </button>
+            </div>
+
+        </div>
+    </aside>
+
+    <!-- Digital Invoice Modal -->
+    <div id="invoiceModal" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div id="printableInvoiceModal" class="bg-white dark:bg-gray-900 rounded-2xl max-w-md w-full p-6 shadow-2xl border border-amber-200 dark:border-gray-800 space-y-4">
+            
+            <!-- Invoice Header -->
+            <div class="text-center border-b border-gray-200 dark:border-gray-800 pb-3">
+                <img src="14364.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=100&q=80'" alt="Logo" class="w-12 h-12 rounded-full mx-auto mb-1">
+                <h3 class="font-serif font-bold text-lg text-gray-900 dark:text-white">PANADERÍA MIPAN 2025 C.A.</h3>
+                <p class="text-xs text-gray-500 dark:text-gray-400">RIF: J-50491823-0 • Los Teques, Estado Miranda</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Av. Pedro Russo Ferrer, C.C. Los Teques</p>
+                <span class="inline-block bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-200 text-xs font-mono font-bold px-2 py-0.5 rounded mt-2" id="invoiceNumber">FACT-2025-001</span>
+            </div>
+
+            <!-- Customer & Order Metadata -->
+            <div class="text-xs space-y-1 bg-gray-50 dark:bg-gray-800 p-3 rounded-lg">
+                <p><strong>Fecha:</strong> <span id="invoiceDate">--/--/----</span></p>
+                <p><strong>Cliente:</strong> <span id="invoiceCustomerName">--</span></p>
+                <p><strong>Teléfono:</strong> <span id="invoiceCustomerPhone">--</span></p>
+                <p><strong>Dirección/Entrega:</strong> <span id="invoiceCustomerAddress">--</span></p>
+                <p><strong>Tasa BCV Aplicada:</strong> <span id="invoiceBcvRate">--</span> Bs/$</p>
+            </div>
+
+            <!-- Itemized Table -->
+            <div class="text-xs">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b border-gray-200 dark:border-gray-700 text-gray-500">
+                            <th class="py-1">Cant/Prod</th>
+                            <th class="py-1 text-right">Precio ($)</th>
+                            <th class="py-1 text-right">Total ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="invoiceItemsTable">
+                        <!-- Dynamic Invoice Items -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Invoice Total Breakdown -->
+            <div class="border-t border-gray-200 dark:border-gray-800 pt-3 space-y-1 text-xs">
+                <div class="flex justify-between font-bold text-gray-900 dark:text-white">
+                    <span>Total USD ($ Ref):</span>
+                    <span id="invoiceTotalUsd">$0.00</span>
+                </div>
+                <div class="flex justify-between font-bold text-classic-500 dark:text-amber-400 text-sm">
+                    <span>Total Bolívares (Bs.):</span>
+                    <span id="invoiceTotalBcv">Bs. 0.00</span>
+                </div>
+            </div>
+
+            <!-- Invoice Actions -->
+            <div class="flex items-center gap-2 pt-2 no-print">
+                <button onclick="window.print()" class="flex-1 bg-gray-800 hover:bg-gray-900 text-white text-xs font-bold py-2 rounded-lg flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-print"></i> Imprimir
+                </button>
+                <button onclick="downloadInvoiceTxt()" class="flex-1 bg-classic-500 hover:bg-classic-600 text-white text-xs font-bold py-2 rounded-lg flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-download"></i> Descargar TXT
+                </button>
+                <button onclick="closeInvoiceModal()" class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-xs font-bold px-3 py-2 rounded-lg">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Reviews & Anti-Spam Section -->
+    <section class="bg-amber-50/50 dark:bg-gray-800/40 border-y border-amber-100 dark:border-gray-800 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Left: Reviews List -->
+            <div>
+                <h3 class="font-serif text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                    <i class="fa-solid fa-star text-amber-400 mr-1"></i> Lo que dicen nuestros clientes
+                </h3>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mb-6">Opiniones reales de familias de Los Teques y Altos Mirandinos.</p>
+
+                <div id="reviewsList" class="space-y-4 max-h-96 overflow-y-auto pr-2">
+                    <!-- Dynamic Reviews Container -->
+                </div>
+            </div>
+
+            <!-- Right: Submit Review Form with Security Honeypot -->
+            <div class="bg-white dark:bg-gray-900 p-6 rounded-2xl border border-amber-200 dark:border-gray-800 shadow-lg space-y-4">
+                <h4 class="font-serif font-bold text-lg text-gray-900 dark:text-white">Déjanos tu Reseña</h4>
+                
+                <form id="reviewForm" onsubmit="handleReviewSubmit(event)" class="space-y-3">
+                    
+                    <!-- Anti-Spam Honeypot Field (hidden from real users) -->
+                    <div style="display:none;" aria-hidden="true">
+                        <label for="website_hp">No llenar si eres humano:</label>
+                        <input type="text" id="website_hp" name="website_hp" tabindex="-1" autocomplete="off">
+                        <input type="hidden" id="formTimestamp" name="formTimestamp" value="">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">Tu Nombre</label>
+                        <input type="text" id="reviewAuthor" required placeholder="Ej. María Rodríguez" class="w-full text-xs p-2.5 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">Puntuación</label>
+                        <select id="reviewRating" class="w-full text-xs p-2.5 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800">
+                            <option value="5">⭐⭐⭐⭐⭐ 5 Estrellas - Excelente</option>
+                            <option value="4">⭐⭐⭐⭐ 4 Estrellas - Muy Bueno</option>
+                            <option value="3">⭐⭐⭐ 3 Estrellas - Aceptable</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">Comentario</label>
+                        <textarea id="reviewText" required rows="3" placeholder="¿Qué fue lo que más te gustó de nuestros panes o atención?" class="w-full text-xs p-2.5 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800 resize-none"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-classic-500 hover:bg-classic-600 text-white font-bold py-2.5 rounded-xl text-xs transition shadow">
+                        Publicar Opinión
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-8">
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">Ubicación & Contacto</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Visítanos en nuestra sede física en Los Teques o contáctanos para envíos directos.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+            
+            <!-- Address Card -->
+            <div class="bg-white dark:bg-gray-900 p-6 rounded-2xl border border-amber-200 dark:border-gray-800 shadow-md flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-900/50 text-classic-500 dark:text-amber-400 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-lg text-gray-900 dark:text-white">Nuestra Sede Principal</h4>
+                    <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Av. Pedro Russo Ferrer, C.C. Los Teques, Nivel P.B., Local 12.<br>
+                        Los Teques, Estado Miranda, Venezuela.
+                    </p>
+                </div>
+                <a href="https://maps.google.com/?q=Av.+Pedro+Russo+Ferrer+Los+Teques" target="_blank" class="inline-flex items-center text-xs font-bold text-classic-500 dark:text-amber-400 hover:underline pt-4">
+                    Ver en Google Maps <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+            </div>
+
+            <!-- Embedded Google Maps -->
+            <div class="md:col-span-2 rounded-2xl overflow-hidden border border-amber-200 dark:border-gray-800 shadow-md min-h-[280px]">
+                <iframe title="Ubicación Panadería MiPan 2025 Los Teques" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.3283281234!2d-67.0428!3d10.3444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a8f89a9f99999%3A0x1234567890abcdef!2sLos%20Teques%2C%20Miranda!5e0!3m2!1ses!2sve!4v1700000000000!5m2!1ses!2sve" class="w-full h-full min-h-[280px] border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BCV Rate Editor Modal -->
+    <div id="rateModal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl max-w-xs w-full p-5 shadow-2xl border border-amber-200 dark:border-gray-800 space-y-3">
+            <h4 class="font-serif font-bold text-gray-900 dark:text-white text-base">Ajustar Tasa BCV (Bs/$)</h4>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Introduce la tasa de cambio oficial en Bolívares por dólar USD:</p>
+            <input type="number" id="newRateInput" step="0.01" class="w-full text-sm p-2 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800 font-bold text-emerald-600">
+            <div class="flex justify-end gap-2 pt-2">
+                <button onclick="closeRateModal()" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300">Cancelar</button>
+                <button onclick="saveBcvRate()" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-classic-500 hover:bg-classic-600 text-white">Guardar Tasa</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Message Container -->
+    <div id="toastContainer" class="fixed bottom-4 right-0 left-0 sm:left-auto sm:right-4 z-50 px-4 pointer-events-none flex flex-col gap-2"></div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 text-xs border-t border-gray-800 py-8 px-4 sm:px-6 lg:px-8 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-center md:text-left">
+                <p class="font-serif text-sm font-bold text-white">Panadería MiPan 2025 C.A.</p>
+                <p class="text-gray-400">Todos los derechos reservados © 2025. Los Teques, Estado Miranda, Venezuela.</p>
+            </div>
+
+            <!-- Social Media Handles -->
+            <div class="flex items-center gap-4 text-base">
+                <a href="https://instagram.com/MIPAN2025.CA" target="_blank" class="hover:text-amber-400 transition" title="Instagram @MIPAN2025.CA">
+                    <i class="fa-brands fa-instagram"></i> <span class="text-xs ml-1 font-mono">@MIPAN2025.CA</span>
+                </a>
+                <a href="https://tiktok.com/@MIPAN2025.CA" target="_blank" class="hover:text-amber-400 transition" title="TikTok @MIPAN2025.CA">
+                    <i class="fa-brands fa-tiktok"></i> <span class="text-xs ml-1 font-mono">@MIPAN2025.CA</span>
+                </a>
+                <a href="https://wa.me/584162214657" target="_blank" class="hover:text-emerald-400 transition" title="WhatsApp Directo">
+                    <i class="fa-brands fa-whatsapp"></i> <span class="text-xs ml-1 font-mono">+58 416-2214657</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Application Logic -->
+    <script>
+
+        // Security Helper: Escape HTML string to prevent XSS injection
+        function escapeHtml(str) {
+            if (!str) return '';
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+
+        // Default Initial Inventory (With exact required image filenames)
+        const DEFAULT_PRODUCTS = [
+            {
+                id: 'prod-1',
+                name: 'Pan de Jamón Navideño Tradicional',
+                category: 'navidad',
+                priceUsd: 12.00,
+                stock: 15,
+                image: '11996.jpg',
+                fallbackImg: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80',
+                desc: 'Relleno con jamón ahumado, tocineta crujiente, pasas de uva y aceitunas deshuesadas.'
+            },
+            {
+                id: 'prod-2',
+                name: 'Rollos de Canela con Queso Glaseados',
+                category: 'dulces',
+                priceUsd: 3.50,
+                stock: 8,
+                image: '11988.jpg',
+                fallbackImg: 'https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=600&q=80',
+                desc: 'Esponjosos rollos de canela perfumada cubierta con queso crema suave y glaseado royal.'
+            },
+            {
+                id: 'prod-3',
+                name: 'Muffins de Chocolate & Avellana',
+                category: 'dulces',
+                priceUsd: 2.50,
+                stock: 20,
+                image: '11255.jpg',
+                fallbackImg: 'https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=600&q=80',
+                desc: 'Muffins esponjosos horneados con chispas de chocolate belga y corazón de avellana.'
+            },
+            {
+                id: 'prod-4',
+                name: 'Brazo Gitano Especial de Crema',
+                category: 'dulces',
+                priceUsd: 8.00,
+                stock: 4,
+                image: '13196.jpg',
+                fallbackImg: 'https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&q=80',
+                desc: 'Bizcocho suave enrollado relleno de dulce de leche o crema chantilly y cubierto de chocolate.'
+            },
+            {
+                id: 'prod-5',
+                name: 'Torta Mini Fresa & Crema Pastelera',
+                category: 'dulces',
+                priceUsd: 6.50,
+                stock: 6,
+                image: '12876.jpg',
+                fallbackImg: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80',
+                desc: 'Porción personal de torta esponjosa con fresas frescas de los Altos Mirandinos y crema pastelera.'
+            },
+            {
+                id: 'prod-6',
+                name: 'Pan Artesanal Campesino',
+                category: 'panes',
+                priceUsd: 2.00,
+                stock: 25,
+                image: '11996.jpg',
+                fallbackImg: 'https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&q=80',
+                desc: 'Pan rustico de corteza crujiente y miga suave fermentada lentamente.'
+            }
+        ];
+
+        // Sample Customer Reviews Initial State
+        const DEFAULT_REVIEWS = [
+            { author: 'Carmen V.', rating: 5, text: '¡El Pan de Jamón es increíble! La masa súper suave y abundante relleno. Súper recomendado en Los Teques.', date: '2025-11-10' },
+            { author: 'Roberto M.', rating: 5, text: 'Los muffins de chocolate y los rollos de canela son los favoritos de mis hijos. Gran atención.', date: '2025-11-12' }
+        ];
+
+        // State Variables
+        let bcvRate = parseFloat(localStorage.getItem('mipan_bcv_rate')) || 68.50;
+        let products = JSON.parse(localStorage.getItem('mipan_products')) || DEFAULT_PRODUCTS;
+        let reviews = JSON.parse(localStorage.getItem('mipan_reviews')) || DEFAULT_REVIEWS;
+        let cart = JSON.parse(localStorage.getItem('mipan_cart')) || [];
+        let currentCategory = 'todos';
+        let searchQuery = '';
+        let deferredPwaPrompt = null;
+
+
+        // Initialize App on DOM Load
+        window.addEventListener('DOMContentLoaded', () => {
+            initDarkMode();
+            initPwaInstaller();
+            initNetworkStatus();
+            initSnowCanvas();
+            renderBcvRate();
+            renderProducts();
+            renderReviews();
+            updateCartBadge();
+            
+            // Set security timestamp for review honeypot form
+            const timestampInput = document.getElementById('formTimestamp');
+            if (timestampInput) timestampInput.value = Date.now().toString();
+        });
+
+        // BCV Rate Rendering & Modal
+        function renderBcvRate() {
+            document.getElementById('bcvRateDisplay').innerText = bcvRate.toFixed(2);
+        }
+
+        function openRateModal() {
+            document.getElementById('newRateInput').value = bcvRate;
+            document.getElementById('rateModal').classList.remove('hidden');
+        }
+
+        function closeRateModal() {
+            document.getElementById('rateModal').classList.add('hidden');
+        }
+
+        function saveBcvRate() {
+            const val = parseFloat(document.getElementById('newRateInput').value);
+            if (val && val > 0) {
+                bcvRate = val;
+                localStorage.setItem('mipan_bcv_rate', bcvRate.toString());
+                renderBcvRate();
+                renderProducts();
+                updateCartTotals();
+                closeRateModal();
+                showToast('Tasa BCV actualizada correctamente a ' + bcvRate.toFixed(2) + ' Bs/$');
+            }
+        }
+
+        // Dark Mode Logic
+        function initDarkMode() {
+            if (localStorage.getItem('mipan_dark_mode') === 'true' || 
+               (!('mipan_dark_mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+                updateDarkModeIcon(true);
+            } else {
+                document.documentElement.classList.remove('dark');
+                updateDarkModeIcon(false);
+            }
+        }
+
+        function toggleDarkMode() {
+            const isDark = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('mipan_dark_mode', isDark);
+            updateDarkModeIcon(isDark);
+        }
+
+        function updateDarkModeIcon(isDark) {
+            const icon = document.getElementById('darkModeIcon');
+            if (icon) {
+                icon.className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+            }
+        }
+
+        // Diplomatic Season Selector (Clásico Artesanal vs Mágica Navidad)
+        function changeSeasonTheme(season) {
+            const body = document.body;
+            if (season === 'navidad') {
+                body.classList.add('theme-navidad');
+                document.getElementById('heroTitle').innerHTML = '🎄 Mágica Navidad & Tradición Horneada 🥖';
+                document.getElementById('heroSubtitle').innerText = 'El sabor de las festividades navideñas en Los Teques. Disfruta de nuestro tradicional Pan de Jamón, Dulces y Especiales.';
+                showToast('¡Modo Mágica Navidad Activado! 🎄');
+            } else {
+                body.classList.remove('theme-navidad');
+                document.getElementById('heroTitle').innerHTML = 'Sabor Artesanal Recién Horneado Cada Mañana';
+                document.getElementById('heroSubtitle').innerText = 'Disfruta de nuestros selectos panes artesanales, rollos de canela, brazo gitano, muffins de chocolate y el inigualable Pan de Jamón Navideño.';
+                showToast('Modo Clásico Artesanal Activado 🥖');
+            }
+        }
+
+        // Network Status Listener
+        function initNetworkStatus() {
+            const banner = document.getElementById('networkStatus');
+            const updateStatus = () => {
+                if (navigator.onLine) {
+                    banner.classList.add('hidden');
+                } else {
+                    banner.classList.remove('hidden');
+                }
+            };
+            window.addEventListener('online', updateStatus);
+            window.addEventListener('offline', updateStatus);
+            updateStatus();
+        }
+
+        // PWA Installation Hook
+        function initPwaInstaller() {
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPwaPrompt = e;
+                const btn = document.getElementById('pwaInstallBtn');
+                if (btn) btn.classList.remove('hidden');
+            });
+        }
+
+        function installPWA() {
+            if (deferredPwaPrompt) {
+                deferredPwaPrompt.prompt();
+                deferredPwaPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        showToast('¡Gracias por instalar App MiPan 2025!');
+                    }
+                    deferredPwaPrompt = null;
+                    document.getElementById('pwaInstallBtn').classList.add('hidden');
+                });
+            } else {
+                showToast('Para instalar la App, usa la opción "Añadir a la pantalla de inicio" de tu navegador.');
+            }
+        }
+
+
+        // Search Handler
+        function handleSearch(val) {
+            searchQuery = escapeHtml(val).toLowerCase();
+            renderProducts();
+        }
+
+        // Category Filter Handler
+        function filterCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                if (btn.innerText.toLowerCase().includes(cat) || (cat === 'todos' && btn.innerText === 'Todos')) {
+                    btn.className = "cat-btn active px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border border-classic-500 bg-classic-500 text-white transition";
+                } else {
+                    btn.className = "cat-btn px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:border-classic-500 transition";
+                }
+            });
+            renderProducts();
+        }
+
+        // Render Product Catalog
+        function renderProducts() {
+            const grid = document.getElementById('productGrid');
+            grid.innerHTML = '';
+
+            const filtered = products.filter(p => {
+                const matchCategory = (currentCategory === 'todos' || p.category === currentCategory);
+                const matchQuery = p.name.toLowerCase().includes(searchQuery) || p.desc.toLowerCase().includes(searchQuery);
+                return matchCategory && matchQuery;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12 text-gray-500 dark:text-gray-400">
+                        <i class="fa-solid fa-wheat-field-semi text-4xl mb-2 text-amber-500"></i>
+                        <p class="font-bold">No se encontraron productos en esta categoría.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(p => {
+                const priceBcv = (p.priceUsd * bcvRate).toFixed(2);
+                
+                // Stock Badge Calculation
+                let stockBadgeClass = 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300';
+                let stockLabel = `En Stock (${p.stock})`;
+                let disabledBtn = '';
+
+                if (p.stock <= 0) {
+                    stockBadgeClass = 'bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300';
+                    stockLabel = 'Agotado';
+                    disabledBtn = 'disabled opacity-50 cursor-not-allowed';
+                } else if (p.stock <= 5) {
+                    stockBadgeClass = 'bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300 animate-pulse';
+                    stockLabel = `Últimas ${p.stock} unids`;
+                }
+
+                const cardHtml = `
+                    <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-amber-200/80 dark:border-gray-800 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col justify-between">
+                        <div>
+                            <div class="relative aspect-16/9 overflow-hidden bg-gray-100 dark:bg-gray-800">
+                                <img src="${p.image}" onerror="this.onerror=null;this.src='${p.fallbackImg}'" alt="${escapeHtml(p.name)}" class="w-full h-full object-cover">
+                                <span class="absolute top-3 right-3 text-xs font-bold px-2.5 py-1 rounded-full ${stockBadgeClass} shadow-sm">
+                                    ${stockLabel}
+                                </span>
+                            </div>
+                            <div class="p-4 space-y-2">
+                                <h4 class="font-serif font-bold text-lg text-gray-900 dark:text-white leading-snug">${escapeHtml(p.name)}</h4>
+                                <p class="text-xs text-gray-600 dark:text-gray-400 line-clamp-2">${escapeHtml(p.desc)}</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 pt-0 space-y-3">
+                            <div class="flex items-baseline justify-between border-t border-gray-100 dark:border-gray-800 pt-3">
+                                <div>
+                                    <span class="text-xs text-gray-500">Ref. USD</span>
+                                    <p class="font-bold text-xl text-emerald-600 dark:text-emerald-400">$${p.priceUsd.toFixed(2)}</p>
+                                </div>
+                                <div class="text-right">
+                                    <span class="text-xs text-gray-500">Tasa BCV</span>
+                                    <p class="font-bold text-sm text-classic-500 dark:text-amber-400">Bs. ${priceBcv}</p>
+                                </div>
+                            </div>
+
+                            <button onclick="addToCart('${p.id}')" ${disabledBtn} class="w-full bg-classic-500 hover:bg-classic-600 text-white font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 transition shadow">
+                                <i class="fa-solid fa-cart-plus"></i> Añadir al Carrito
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.insertAdjacentHTML('beforeend', cardHtml);
+            });
+        }
+
+
+        // Cart Drawer Toggling
+        function toggleCartDrawer() {
+            const drawer = document.getElementById('cartDrawer');
+            const backdrop = document.getElementById('cartDrawerBackdrop');
+            const isOpen = !drawer.classList.contains('translate-x-full');
+
+            if (isOpen) {
+                drawer.classList.add('translate-x-full');
+                backdrop.classList.add('opacity-0', 'pointer-events-none');
+            } else {
+                drawer.classList.remove('translate-x-full');
+                backdrop.classList.remove('opacity-0', 'pointer-events-none');
+                renderCartItems();
+            }
+        }
+
+        // Add Product to Cart
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product || product.stock <= 0) return;
+
+            const existing = cart.find(item => item.id === productId);
+            if (existing) {
+                if (existing.qty < product.stock) {
+                    existing.qty += 1;
+                    showToast(`+1 ${product.name} agregado al carrito`);
+                } else {
+                    showToast(`No hay más stock disponible de ${product.name}`);
+                    return;
+                }
+            } else {
+                cart.push({ id: product.id, qty: 1 });
+                showToast(`${product.name} agregado al carrito`);
+            }
+
+            saveCart();
+            updateCartBadge();
+        }
+
+        function saveCart() {
+            localStorage.setItem('mipan_cart', JSON.stringify(cart));
+        }
+
+        function updateCartBadge() {
+            const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+            document.getElementById('cartBadge').innerText = totalItems;
+        }
+
+        function updateItemQty(productId, delta) {
+            const itemIndex = cart.findIndex(i => i.id === productId);
+            if (itemIndex > -1) {
+                const product = products.find(p => p.id === productId);
+                const newQty = cart[itemIndex].qty + delta;
+
+                if (newQty <= 0) {
+                    cart.splice(itemIndex, 1);
+                } else if (newQty <= product.stock) {
+                    cart[itemIndex].qty = newQty;
+                } else {
+                    showToast('Has alcanzado el límite de stock de este producto');
+                }
+                saveCart();
+                updateCartBadge();
+                renderCartItems();
+            }
+        }
+
+        // Render Cart Drawer Content
+        function renderCartItems() {
+            const container = document.getElementById('cartItemsContainer');
+            container.innerHTML = '';
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 text-gray-500 dark:text-gray-400">
+                        <i class="fa-solid fa-basket-shopping text-4xl mb-2 text-gray-300"></i>
+                        <p class="font-bold text-sm">Tu carrito está vacío</p>
+                        <p class="text-xs">Añade panes y dulces desde nuestro catálogo.</p>
+                    </div>
+                `;
+                updateCartTotals();
+                return;
+            }
+
+            cart.forEach(item => {
+                const p = products.find(prod => prod.id === item.id);
+                if (!p) return;
+
+                const itemTotalUsd = (p.priceUsd * item.qty).toFixed(2);
+
+                const itemHtml = `
+                    <div class="flex items-center justify-between gap-3 p-2.5 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+                        <img src="${p.image}" onerror="this.onerror=null;this.src='${p.fallbackImg}'" alt="${escapeHtml(p.name)}" class="w-12 h-12 rounded-lg object-cover">
+                        <div class="flex-1 min-w-0">
+                            <h5 class="font-bold text-xs text-gray-900 dark:text-white truncate">${escapeHtml(p.name)}</h5>
+                            <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold">$${p.priceUsd.toFixed(2)} c/u</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center border border-gray-300 dark:border-gray-600 rounded-lg overflow-hidden">
+                                <button onclick="updateItemQty('${p.id}', -1)" class="px-2 py-0.5 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-xs font-bold hover:bg-gray-300">-</button>
+                                <span class="px-2 text-xs font-bold text-gray-800 dark:text-gray-200">${item.qty}</span>
+                                <button onclick="updateItemQty('${p.id}', 1)" class="px-2 py-0.5 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-xs font-bold hover:bg-gray-300">+</button>
+                            </div>
+                            <span class="text-xs font-bold text-gray-900 dark:text-white">$${itemTotalUsd}</span>
+                        </div>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', itemHtml);
+            });
+
+            updateCartTotals();
+        }
+
+        // Calculate Cart Totals & Delivery
+        function updateCartTotals() {
+            let subtotal = 0;
+            cart.forEach(item => {
+                const p = products.find(prod => prod.id === item.id);
+                if (p) subtotal += p.priceUsd * item.qty;
+            });
+
+            const deliveryOption = document.getElementById('deliverySelect').value;
+            let deliveryFee = 0;
+            if (deliveryOption === 'delivery_teques') deliveryFee = 2.00;
+            if (deliveryOption === 'delivery_altos') deliveryFee = 4.00;
+
+            const totalUsd = subtotal + deliveryFee;
+            const totalBcv = totalUsd * bcvRate;
+
+            document.getElementById('cartSubtotalUsd').innerText = `$${subtotal.toFixed(2)}`;
+            document.getElementById('cartDeliveryUsd').innerText = `$${deliveryFee.toFixed(2)}`;
+            document.getElementById('cartTotalUsd').innerText = `$${totalUsd.toFixed(2)}`;
+            document.getElementById('cartTotalBcv').innerText = `Bs. ${totalBcv.toFixed(2)}`;
+        }
+
+
+        // Send Formatted Order to WhatsApp
+        function sendOrderWhatsApp() {
+            if (cart.length === 0) {
+                showToast('Añade al menos un producto al carrito');
+                return;
+            }
+
+            const name = escapeHtml(document.getElementById('customerName').value.trim());
+            const phone = escapeHtml(document.getElementById('customerPhone').value.trim());
+            const address = escapeHtml(document.getElementById('customerAddress').value.trim());
+            const deliveryOption = document.getElementById('deliverySelect').selectedOptions[0].text;
+
+            if (!name || !phone || !address) {
+                showToast('Por favor completa Nombre, Teléfono y Dirección');
+                return;
+            }
+
+            let msg = `🥖 *NUEVO PEDIDO - PANADERÍA MIPAN 2025 C.A.*\n`;
+            msg += `--------------------------------------\n`;
+            msg += `👤 *Cliente:* ${name}\n`;
+            msg += `📞 *Teléfono:* ${phone}\n`;
+            msg += `📍 *Dirección/Ref:* ${address}\n`;
+            msg += `🚚 *Método:* ${deliveryOption}\n`;
+            msg += `--------------------------------------\n`;
+            msg += `📦 *PRODUCTOS:* \n`;
+
+            let subtotal = 0;
+            cart.forEach(item => {
+                const p = products.find(prod => prod.id === item.id);
+                if (p) {
+                    const itemTotal = p.priceUsd * item.qty;
+                    subtotal += itemTotal;
+                    msg += `• ${item.qty}x ${p.name} - $${itemTotal.toFixed(2)}\n`;
+                }
+            });
+
+            let deliveryFee = 0;
+            const delVal = document.getElementById('deliverySelect').value;
+            if (delVal === 'delivery_teques') deliveryFee = 2.00;
+            if (delVal === 'delivery_altos') deliveryFee = 4.00;
+
+            const totalUsd = subtotal + deliveryFee;
+            const totalBcv = totalUsd * bcvRate;
+
+            msg += `--------------------------------------\n`;
+            msg += `💰 *Subtotal USD:* $${subtotal.toFixed(2)}\n`;
+            msg += `🚚 *Delivery USD:* $${deliveryFee.toFixed(2)}\n`;
+            msg += `💵 *TOTAL USD Ref:* $${totalUsd.toFixed(2)}\n`;
+            msg += `🇻🇪 *TOTAL BCV (Bs):* Bs. ${totalBcv.toFixed(2)} (Tasa: ${bcvRate.toFixed(2)})\n`;
+            msg += `--------------------------------------\n`;
+            msg += `_Enviado desde MiPan 2025 PWA App_`;
+
+            // Deduct Stock in Real-time LocalStorage
+            cart.forEach(item => {
+                const p = products.find(prod => prod.id === item.id);
+                if (p) {
+                    p.stock = Math.max(0, p.stock - item.qty);
+                }
+            });
+            localStorage.setItem('mipan_products', JSON.stringify(products));
+
+            // Clear Cart
+            cart = [];
+            saveCart();
+            updateCartBadge();
+            renderProducts();
+            toggleCartDrawer();
+
+            // Redirect to WhatsApp (+58 416-2214657)
+            const waUrl = `https://wa.me/584162214657?text=${encodeURIComponent(msg)}`;
+            window.open(waUrl, '_blank');
+        }
+
+        // Digital Invoice Generator
+        function generateDigitalInvoice() {
+            if (cart.length === 0) {
+                showToast('El carrito está vacío para generar factura');
+                return;
+            }
+
+            const name = escapeHtml(document.getElementById('customerName').value.trim()) || 'Cliente General';
+            const phone = escapeHtml(document.getElementById('customerPhone').value.trim()) || 'N/A';
+            const address = escapeHtml(document.getElementById('customerAddress').value.trim()) || 'Retiro en Tienda';
+
+            const invoiceNum = 'FACT-2025-' + Math.floor(1000 + Math.random() * 9000);
+            const now = new Date().toLocaleDateString('es-VE') + ' ' + new Date().toLocaleTimeString('es-VE', {hour:'2-digit', minute:'2-digit'});
+
+            document.getElementById('invoiceNumber').innerText = invoiceNum;
+            document.getElementById('invoiceDate').innerText = now;
+            document.getElementById('invoiceCustomerName').innerText = name;
+            document.getElementById('invoiceCustomerPhone').innerText = phone;
+            document.getElementById('invoiceCustomerAddress').innerText = address;
+            document.getElementById('invoiceBcvRate').innerText = bcvRate.toFixed(2);
+
+            const tableBody = document.getElementById('invoiceItemsTable');
+            tableBody.innerHTML = '';
+
+            let subtotal = 0;
+            cart.forEach(item => {
+                const p = products.find(prod => prod.id === item.id);
+                if (p) {
+                    const itemTotal = p.priceUsd * item.qty;
+                    subtotal += itemTotal;
+
+                    const row = `
+                        <tr class="border-b border-gray-100 dark:border-gray-800">
+                            <td class="py-1">${item.qty}x ${escapeHtml(p.name)}</td>
+                            <td class="py-1 text-right">$${p.priceUsd.toFixed(2)}</td>
+                            <td class="py-1 text-right">$${itemTotal.toFixed(2)}</td>
+                        </tr>
+                    `;
+                    tableBody.insertAdjacentHTML('beforeend', row);
+                }
+            });
+
+            let deliveryFee = 0;
+            const delVal = document.getElementById('deliverySelect').value;
+            if (delVal === 'delivery_teques') deliveryFee = 2.00;
+            if (delVal === 'delivery_altos') deliveryFee = 4.00;
+
+            if (deliveryFee > 0) {
+                tableBody.insertAdjacentHTML('beforeend', `
+                    <tr class="border-b border-gray-100 dark:border-gray-800 italic">
+                        <td class="py-1" colspan="2">Servicio de Delivery</td>
+                        <td class="py-1 text-right">$${deliveryFee.toFixed(2)}</td>
+                    </tr>
+                `);
+            }
+
+            const totalUsd = subtotal + deliveryFee;
+            const totalBcv = totalUsd * bcvRate;
+
+            document.getElementById('invoiceTotalUsd').innerText = `$${totalUsd.toFixed(2)}`;
+            document.getElementById('invoiceTotalBcv').innerText = `Bs. ${totalBcv.toFixed(2)}`;
+
+            document.getElementById('invoiceModal').classList.remove('hidden');
+        }
+
+        function closeInvoiceModal() {
+            document.getElementById('invoiceModal').classList.add('hidden');
+        }
+
+        function downloadInvoiceTxt() {
+            const invoiceNum = document.getElementById('invoiceNumber').innerText;
+            const date = document.getElementById('invoiceDate').innerText;
+            const name = document.getElementById('invoiceCustomerName').innerText;
+            const totalUsd = document.getElementById('invoiceTotalUsd').innerText;
+            const totalBcv = document.getElementById('invoiceTotalBcv').innerText;
+
+            let textContent = `=========================================\n`;
+            textContent += `     PANADERÍA MIPAN 2025 C.A. - FACTURA\n`;
+            textContent += `=========================================\n`;
+            textContent += `Factura N°: ${invoiceNum}\n`;
+            textContent += `Fecha: ${date}\n`;
+            textContent += `Cliente: ${name}\n`;
+            textContent += `Tasa BCV: ${bcvRate.toFixed(2)} Bs/$\n`;
+            textContent += `-----------------------------------------\n`;
+            textContent += `Monto Total USD: ${totalUsd}\n`;
+            textContent += `Monto Total Bolívares: ${totalBcv}\n`;
+            textContent += `-----------------------------------------\n`;
+            textContent += `¡Gracias por su compra en Los Teques!\n`;
+
+            const blob = new Blob([textContent], { type: 'text/plain;charset=utf-8' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `${invoiceNum}.txt`;
+            link.click();
+        }
+
+
+        // Render Reviews
+        function renderReviews() {
+            const list = document.getElementById('reviewsList');
+            list.innerHTML = '';
+
+            reviews.forEach(r => {
+                const stars = '⭐'.repeat(r.rating);
+                const item = `
+                    <div class="bg-white dark:bg-gray-900 p-4 rounded-xl border border-amber-100 dark:border-gray-800 shadow-sm space-y-1">
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-xs text-gray-900 dark:text-white">${escapeHtml(r.author)}</span>
+                            <span class="text-xs text-amber-500">${stars}</span>
+                        </div>
+                        <p class="text-xs text-gray-600 dark:text-gray-300">${escapeHtml(r.text)}</p>
+                        <span class="text-[10px] text-gray-400 block text-right">${r.date}</span>
+                    </div>
+                `;
+                list.insertAdjacentHTML('beforeend', item);
+            });
+        }
+
+        // Anti-Spam Protected Review Submission
+        function handleReviewSubmit(e) {
+            e.preventDefault();
+
+            // Honeypot Field Check
+            const hpVal = document.getElementById('website_hp').value;
+            if (hpVal && hpVal.trim() !== '') {
+                console.warn('Bot detected via honeypot field.');
+                return false;
+            }
+
+            // Timestamp Rate Limiting Check (Minimum 3 seconds required to fill form)
+            const timestamp = parseInt(document.getElementById('formTimestamp').value || '0');
+            const now = Date.now();
+            if (now - timestamp < 3000) {
+                showToast('Procesamiento muy rápido. Inténtalo de nuevo.');
+                return false;
+            }
+
+            const author = escapeHtml(document.getElementById('reviewAuthor').value.trim());
+            const rating = parseInt(document.getElementById('reviewRating').value);
+            const text = escapeHtml(document.getElementById('reviewText').value.trim());
+
+            if (!author || !text) {
+                showToast('Por favor completa todos los campos de la reseña.');
+                return false;
+            }
+
+            const newReview = {
+                author,
+                rating,
+                text,
+                date: new Date().toISOString().split('T')[0]
+            };
+
+            reviews.unshift(newReview);
+            localStorage.setItem('mipan_reviews', JSON.stringify(reviews));
+
+            renderReviews();
+            document.getElementById('reviewForm').reset();
+            document.getElementById('formTimestamp').value = Date.now().toString();
+            showToast('¡Gracias por tu reseña! Ha sido publicada.');
+        }
+
+        // Floating Toast System
+        function showToast(message) {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = 'bg-gray-900 text-white dark:bg-amber-400 dark:text-gray-900 text-xs font-semibold px-4 py-2.5 rounded-xl shadow-lg flex items-center gap-2 transform translate-y-4 opacity-0 transition-all duration-300 pointer-events-auto';
+            toast.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400 dark:text-gray-900"></i> <span>${escapeHtml(message)}</span>`;
+            
+            container.appendChild(toast);
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-4', 'opacity-0');
+            }, 10);
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-4');
+                setTimeout(() => toast.remove(), 300);
+            }, 3500);
+        }
+
+        // Christmas Snow Canvas Animation Engine
+        function initSnowCanvas() {
+            const canvas = document.getElementById('snowCanvas');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d');
+            let width = (canvas.width = window.innerWidth);
+            let height = (canvas.height = window.innerHeight);
+
+            window.addEventListener('resize', () => {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            });
+
+            const numFlakes = 60;
+            const flakes = [];
+
+            for (let i = 0; i < numFlakes; i++) {
+                flakes.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    r: Math.random() * 3 + 1,
+                    d: Math.random() * numFlakes,
+                    speedY: Math.random() * 1.5 + 0.5,
+                    speedX: Math.random() * 0.5 - 0.25
+                });
+            }
+
+            function drawFlakes() {
+                ctx.clearRect(0, 0, width, height);
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                ctx.beginPath();
+                for (let i = 0; i < numFlakes; i++) {
+                    const f = flakes[i];
+                    ctx.moveTo(f.x, f.y);
+                    ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
+                }
+                ctx.fill();
+                updateFlakes();
+            }
+
+            function updateFlakes() {
+                for (let i = 0; i < numFlakes; i++) {
+                    const f = flakes[i];
+                    f.y += f.speedY;
+                    f.x += f.speedX;
+
+                    if (f.y > height) {
+                        flakes[i] = { x: Math.random() * width, y: 0, r: f.r, d: f.d, speedY: f.speedY, speedX: f.speedX };
+                    }
+                }
+            }
+
+            function animateSnow() {
+                drawFlakes();
+                requestAnimationFrame(animateSnow);
+            }
+
+            animateSnow();
+        }
+    </script>
+</body>
+</html>
