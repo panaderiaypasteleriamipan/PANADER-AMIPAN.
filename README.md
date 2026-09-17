@@ -1,38 +1,20 @@
-# 🥖 MI PAN 2025, C.A. — Estrategia Oficial de Anuncio en Redes Sociales
+# MiPan 2025 C.A.
 
-Este repositorio contiene la estrategia integral de lanzamiento y optimización de hashtags para el gran anuncio oficial de **MI PAN 2025, C.A.** en las plataformas de **Facebook** y **TikTok**[cite: 5, 6]. El diseño ha sido completamente rediseñado bajo un concepto de **alta elegancia, modernidad y alto impacto visual**[cite: 5, 6].
+Tienda estática preparada para GitHub Pages, móvil y escritorio.
 
----
+## Incluye
+- Catálogo responsive con búsqueda y filtros.
+- Carrito local y pedido por WhatsApp.
+- Inventario local con exportación JSON (PIN inicial `2025`; cámbialo en `assets/app.js` antes de publicar si lo necesitas).
+- Modo claro/oscuro, identidad de temporada y PWA instalable.
+- Service worker para cargar la aplicación básica sin conexión.
+- Imagen de marca con resolución por nombre: `assets/images/14364.svg`. El logo existente `logo.jpg` se usa como imagen principal.
+- Google Maps, Google Fonts y datos estructurados para SEO local.
 
-## 🎨 Identidad Visual y Paleta de Colores
+## Publicar
+En GitHub: **Settings → Pages → Deploy from a branch → main → /(root)**. No necesita compilación ni servidor.
 
-El diseño visual implementa una estética corporativa sofisticada basada en:
-* **Azul Marino Profundo (`#1A2B4C`):** Transmite autoridad, confianza institucional y estabilidad[cite: 6].
-* **Oro Suave / Champán (`#C5A059`):** Aporta un toque de exclusividad, lujo y distinción[cite: 6].
-* **Fondo Neutro Cálido (`#F9F8F6`):** Ofrece una lectura limpia, cómoda y profesional[cite: 6].
+## Imágenes de productos
+Las imágenes de catálogo usan URLs públicas de Unsplash como demostración. Para imágenes propias, súbelas a `assets/images/` y cambia `image` en `assets/app.js`. La tienda no ejecuta código subido desde el inventario: solo acepta datos JSON y renderiza texto sanitizado.
 
----
-
-## 📊 Estructura del Documento
-
-1. **Resumen Ejecutivo y Visión de Marca:** Presentación del plan maestro de posicionamiento digital y métricas clave de alcance[cite: 5, 6].
-2. **Optimización para Facebook:** Enfoque orientado a la comunidad, la retención y el uso estratégico de 1 a 2 hashtags institucionales (`#MiPan2025`, `#AnuncioImportante`, `#TradiciónYFuturo`)[cite: 5, 6].
-3. **Optimización para TikTok:** Enfoque dinámico basado en tendencias masivas y de nicho (`#ParaTi`, `#FYP`, `#PanaderíaArtesanal`, etc.) con de 3 a 5 etiquetas segmentadas[cite: 5, 6].
-4. **Cronograma de Ejecución:** Pautas horarias óptimas (18:00 - 20:00 hrs) y recomendaciones de interacción en vivo para activar el algoritmo[cite: 5, 6].
-
----
-
-## 🛠️ Archivos Incluidos
-
-* `estrategia_anuncio_mipan_v2.html` — Código fuente del documento estilizado con CSS avanzado, diseñado con cabeceras dinámicas, tablas y tarjetas de estadísticas[cite: 6].
-* `estrategia_anuncio_mipan_v2.pdf` — Versión exportada en formato PDF lista para distribución ejecutiva[cite: 5].
-
----
-
-## 🚀 Instrucciones de Uso
-
-Para visualizar o modificar el documento:
-1. Abre el archivo `estrategia_anuncio_mipan_v2.html` en cualquier navegador web moderno.
-2. Si deseas exportarlo nuevamente a PDF utilizando **WeasyPrint**, puedes ejecutar el siguiente comando en tu entorno de desarrollo:
-   ```bash
-   weasyprint estrategia_anuncio_mipan_v2.html estrategia_anuncio_mipan_v2.pdf
+> El PIN y el inventario local no son un sistema de autenticación multiusuario: cualquier usuario con acceso al navegador puede inspeccionarlo. Para administrar ventas reales, conecta un backend con autenticación y reglas de servidor.
